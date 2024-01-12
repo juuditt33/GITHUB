@@ -12,6 +12,16 @@
 			"sid": 104536805592918
 		},
 		{
+			"eventType": "variable",
+			"name": "vida_personaje",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 125421608805380
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -66,6 +76,14 @@
 					"sid": 750106184812316,
 					"parameters": {
 						"frame-number": "0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 356246673673227,
+					"parameters": {
+						"seconds": "0.5"
 					}
 				}
 			],
@@ -192,14 +210,46 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 254004645492388,
+					"sid": 929692704513687,
 					"parameters": {
-						"variable": "Power",
+						"variable": "vida_personaje",
 						"value": "1"
 					}
 				}
 			],
 			"sid": 829709805033129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 768769141484433,
+					"parameters": {
+						"variable": "vida_personaje",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 935693294214126,
+					"parameters": {
+						"variable": "vida_personaje",
+						"value": "0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite3",
+					"sid": 607889320195924
+				}
+			],
+			"sid": 593088361153376
 		},
 		{
 			"eventType": "block",
@@ -306,6 +356,116 @@
 				}
 			],
 			"sid": 395245279790318
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 231742984789334,
+					"parameters": {
+						"interval-seconds": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite",
+					"sid": 572004122357601,
+					"parameters": {
+						"object": "Sprite6",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 124521338779169
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 854106949370438
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "PuntosDePoder",
+					"sid": 683117578732980
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "PuntosDePoder",
+					"sid": 755856808688727,
+					"behaviorType": "Personalizado",
+					"parameters": {
+						"which": "horizontal",
+						"speed": "-150"
+					}
+				}
+			],
+			"sid": 126558626517407
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 490712715027451,
+					"parameters": {
+						"interval-seconds": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite4",
+					"sid": 571608196259614,
+					"parameters": {
+						"object": "Sprite6",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 575017432057719
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 571184081024814,
+					"parameters": {
+						"interval-seconds": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Sprite7",
+					"sid": 764642062929707,
+					"parameters": {
+						"object": "Sprite6",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 252922020755135
 		}
 	],
 	"sid": 486084968905657
