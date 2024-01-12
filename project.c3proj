@@ -50,6 +50,41 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pathfinding",
+			"name": "Busca-rutas",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Persist",
+			"name": "Persistencia",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Girar",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "TileMovement",
+			"name": "Movimiento en cuadrícula",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Restringido a la escena",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "custom",
 			"name": "Personalizado",
 			"author": "Scirra",
@@ -68,7 +103,9 @@
 			"Teclado",
 			"PuntoDePoder",
 			"PuntosDePoder",
-			"Sprite"
+			"Sprite",
+			"Sprite4",
+			"Sprite7"
 		],
 		"subfolders": []
 	},
