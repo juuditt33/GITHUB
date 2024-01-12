@@ -1,0 +1,71 @@
+{
+	"name": "Sprite3",
+	"plugin-id": "Sprite",
+	"sid": 587704398657300,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "EightDir",
+			"name": "8Direcciones",
+			"sid": 826467812807428
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 473,
+						"height": 758,
+						"originX": 0.5137420718816068,
+						"originY": 0.16754617414248021,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5539072,
+						"collisionPoly": {
+							"points": [
+								0.45665961945031713,
+								0.08311345646437995,
+								0.642706131078224,
+								0.10554089709762533,
+								0.8604651162790697,
+								0.32849604221635886,
+								0.8329809725158562,
+								0.8865435356200527,
+								0.4355179704016913,
+								0.9366754617414248,
+								0.13953488372093023,
+								0.8575197889182058,
+								0.14587737843551796,
+								0.32058047493403696,
+								0.386892177589852,
+								0.09234828496042216
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Punto imagen 1",
+								"x": 0.5052854122621564,
+								"y": 0.16754617414248021
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 595510977699438,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
