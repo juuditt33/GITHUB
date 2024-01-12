@@ -9,6 +9,11 @@
 			"behaviorId": "EightDir",
 			"name": "8Direcciones",
 			"sid": 826467812807428
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Parpadeo",
+			"sid": 305449101110343
 		}
 	],
 	"effectTypes": [],
