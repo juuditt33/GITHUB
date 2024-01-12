@@ -40,20 +40,35 @@
 			"name": "8 Direcciones",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Flash",
+			"name": "Parpadeo",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "custom",
+			"name": "Personalizado",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "w2tdaud1b9f",
 	"objectTypes": {
 		"items": [
-			"Sprite",
 			"Sprite2",
 			"FondoEnMosaico",
 			"Sprite3",
-			"Sprite4",
 			"FondoEnMosaico2",
 			"Sprite5",
 			"Sprite6",
-			"Teclado"
+			"Teclado",
+			"PuntoDePoder",
+			"PuntosDePoder",
+			"Sprite"
 		],
 		"subfolders": []
 	},
