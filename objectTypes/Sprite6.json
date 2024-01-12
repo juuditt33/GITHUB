@@ -3,8 +3,27 @@
 	"plugin-id": "Sprite",
 	"sid": 401924024400165,
 	"isGlobal": false,
-	"instanceVariables": [],
-	"behaviorTypes": [],
+	"instanceVariables": [
+		{
+			"name": "Vida",
+			"type": "number",
+			"desc": "vida",
+			"show": true,
+			"sid": 877617062728472
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "Personalizado",
+			"sid": 270464518623393
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Parpadeo",
+			"sid": 726078182123454
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
