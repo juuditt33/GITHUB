@@ -4,7 +4,13 @@
 	"sid": 620533434595140,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "custom",
+			"name": "Personalizado",
+			"sid": 177015067599057
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
