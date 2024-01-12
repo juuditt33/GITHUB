@@ -59,9 +59,253 @@
 						"image-point": "0",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite3",
+					"sid": 750106184812316,
+					"parameters": {
+						"frame-number": "0"
+					}
 				}
 			],
 			"sid": 598254433976301
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 120963252199808,
+					"parameters": {
+						"object": "PuntosDePoder"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 590945349082891,
+					"parameters": {
+						"variable": "Power",
+						"comparison": 3,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 802578236714787,
+					"parameters": {
+						"variable": "Power",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "PuntosDePoder",
+					"sid": 725802371775480
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 206691265752575,
+					"parameters": {
+						"variable": "Power",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 272039880880553,
+					"parameters": {
+						"variable": "Power",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 500850080773206,
+					"parameters": {
+						"variable": "Power",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 597146077367045
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 844579999940354
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite3",
+					"sid": 767979752322883,
+					"parameters": {
+						"frame-number": "Power"
+					}
+				}
+			],
+			"sid": 749721175363453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 933064856286326,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Sprite3",
+					"sid": 978721492366648,
+					"behaviorType": "Parpadeo",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Sprite6",
+					"sid": 846300521941549
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 254004645492388,
+					"parameters": {
+						"variable": "Power",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 829709805033129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "Sprite6",
+					"sid": 373752698763903
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "Sprite6",
+					"sid": 876326790276418,
+					"behaviorType": "Personalizado",
+					"parameters": {
+						"which": "horizontal",
+						"speed": "-100"
+					}
+				}
+			],
+			"sid": 260718827127855
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "Sprite6",
+					"sid": 379152432474082,
+					"parameters": {
+						"instance-variable": "Vida",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Sprite6",
+					"sid": 251703279938915
+				}
+			],
+			"sid": 610058255861010
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite5",
+					"sid": 723528463340450,
+					"parameters": {
+						"object": "Sprite6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-instvar",
+					"objectClass": "Sprite6",
+					"sid": 114117749875905,
+					"parameters": {
+						"instance-variable": "Vida",
+						"value": "1"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Sprite6",
+					"sid": 710391161591138,
+					"behaviorType": "Parpadeo",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1.0"
+					}
+				}
+			],
+			"sid": 478807373760904
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 153743439963014,
+					"parameters": {
+						"object": "PuntosDePoder"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Sprite5",
+					"sid": 540507917682843,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 395245279790318
 		}
 	],
 	"sid": 486084968905657
