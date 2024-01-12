@@ -4,7 +4,38 @@
 	"sid": 156757702150050,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "bound",
+			"name": "RestringidoALaEscena",
+			"sid": 454211165002168
+		},
+		{
+			"behaviorId": "TileMovement",
+			"name": "MovimientoEnCuadrícula",
+			"sid": 873813701461205
+		},
+		{
+			"behaviorId": "custom",
+			"name": "Personalizado",
+			"sid": 410306784575389
+		},
+		{
+			"behaviorId": "Persist",
+			"name": "Persistencia",
+			"sid": 791898770663964
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Girar",
+			"sid": 481106904043587
+		},
+		{
+			"behaviorId": "Pathfinding",
+			"name": "Buscarutas",
+			"sid": 654343325835095
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
