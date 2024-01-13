@@ -15,8 +15,22 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -105,7 +119,15 @@
 			"PuntosDePoder",
 			"Sprite",
 			"Sprite4",
-			"Sprite7"
+			"Sprite7",
+			"Texto",
+			"Texto2",
+			"Texto3",
+			"COMENZAR",
+			"Texto5",
+			"Mouse",
+			"Texto4",
+			"REINICIAR"
 		],
 		"subfolders": []
 	},
@@ -117,13 +139,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1"
+			"Escena 1",
+			"MENÚ DE INICIO",
+			"menú final"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Hoja de eventos 1"
+			"Hoja de eventos 1",
+			"Hoja de eventos 2",
+			"Hoja de eventos menú final"
 		],
 		"subfolders": []
 	},
@@ -281,5 +307,5 @@
 	},
 	"viewportWidth": 854,
 	"viewportHeight": 480,
-	"firstLayout": null
+	"firstLayout": "MENÚ DE INICIO"
 }
