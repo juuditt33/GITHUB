@@ -1,0 +1,32 @@
+{
+	"name": "Hoja de eventos menú final",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 727519566784423,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "REINICIAR"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 994300757762576,
+					"parameters": {
+						"layout": "MENÚ DE INICIO"
+					}
+				}
+			],
+			"sid": 115130446995503
+		}
+	],
+	"sid": 837669114220836
+}
