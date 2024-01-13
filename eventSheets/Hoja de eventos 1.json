@@ -466,6 +466,27 @@
 				}
 			],
 			"sid": 252922020755135
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-destroyed",
+					"objectClass": "Sprite3",
+					"sid": 819553200957485
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 711199287201245,
+					"parameters": {
+						"layout": "menú final"
+					}
+				}
+			],
+			"sid": 472405461905528
 		}
 	],
 	"sid": 486084968905657
